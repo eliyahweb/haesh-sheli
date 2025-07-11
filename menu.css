@@ -1,4 +1,6 @@
 body {
+    height: 100%;
+
   font-family: Arial, sans-serif;
   background: url('flames-bg.png') bottom center / cover no-repeat fixed, black;
   color: white;
