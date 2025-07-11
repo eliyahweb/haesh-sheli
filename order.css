@@ -1,0 +1,234 @@
+/* עיצוב כללי לדף ההזמנה */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background: url('../RES/flames-bg.png') no-repeat center center fixed;
+  background-size: cover; /* התמונה מתפרסת על כל המסך */
+  min-height: 100vh; /* דואג שהתמונה תכסה את כל גובה המסך */
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: crimson;
+}
+
+.back {
+  color: #ccc;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+}
+
+.back:hover {
+  color: crimson;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* שחור כהה לפרטי הלקוח */
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+footer {
+  background-color: #111; /* רקע שחור חזק */
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .back-footer {
+  color: #ccc;
+  text-decoration: underline;
+  display: block;
+  margin-top: 20px;
+}
+
+footer .back-footer:hover {
+  color: crimson;
+}
+
+/* בלוק של מנה */
+.dish-block {
+  border: 2px solid crimson;
+  border-radius: 10px;
+  padding: 15px 15px 20px;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dish-block h3 {
+  margin-top: 0;
+  color: crimson;
+  font-weight: bold;
+}
+
+.extras-container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: none; /* מוסתר בברירת מחדל */
+}
+
+.bread-options {
+  display: none; /* מוסתר בברירת מחדל */
+}
+
+/* שדה טלפון – כיווניות ותמיכה במספרים בלבד */
+input[type="tel"] {
+  direction: rtl;
+}
+
+input[type="tel"]::-webkit-inner-spin-button,
+input[type="tel"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="tel"] {
+  ime-mode: disabled;
+}
+
+/* רווח בין פרטי הלקוח למנות */
+#dishesContainer {
+  margin-top: 30px;
+}
+
+/* מניעת מחיקת המנה הראשונה */
+.dish-block:first-child .remove-dish {
+  display: none;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* הודעת שגיאה בשדה טלפון */
+#error-phone {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 3px;
+  display: none;
+}
+
+/* רספונסיביות – התאמה לניידים */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
+
+/* עיצוב footer */
+footer {
+  background-color: #111; /* רקע שחור חזק */
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .back-footer {
+  color: #ccc;
+  text-decoration: underline;
+  display: block;
+  margin-top: 20px;
+}
+
+footer .back-footer:hover {
+  color: crimson;
+}
+/* עיצוב כפתורי סוג תשלום */
+.payment-method {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-method label {
+  font-weight: bold;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 5px;
+  width: auto;
+}

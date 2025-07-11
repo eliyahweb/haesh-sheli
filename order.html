@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>הזמנה - האש שלי</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../STYLE/order.css">
+</head>
+<body>
+  <header>
+    <h1>הזמנת משלוח</h1>
+    <a href="menu.html" class="back">← חזרה לתפריט</a>
+  </header>
+
+  <main>
+    <form id="orderForm">
+      <h2>פרטי הלקוח</h2>
+      <input type="text" id="fullName" placeholder="שם מלא" required>
+      <input type="text" id="address" placeholder="כתובת מלאה" required>
+      <input type="tel" id="phone" placeholder="מספר טלפון" pattern="^[0-9]{9,10}$" required>
+      <small id="phoneError" style="color: red; display: none;">יש להקליד מספר חוקי בן 9–10 ספרות בלבד</small>
+
+      <div id="dishesContainer"></div>
+      <button type="button" onclick="addDish()">➕להוספת מנה</button>
+
+      <textarea id="notes" placeholder="הערות נוספות..."></textarea>
+<!-- הוסף את זה לפני כפתור הוואטסאפ -->
+
+<div class="payment-method">
+  <label>בחר סוג תשלום:</label>
+  <label><input type="radio" name="paymentMethod" value="אשראי"> אשראי</label>
+  <label><input type="radio" name="paymentMethod" value="מזומן"> מזומן</label>
+</div>
+
+
+
+    <button type="button" id="whatsappButton">שלח הזמנה בווטסאפ</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 אליה בנו. כל הזכויות שמורות.</p>
+
+  </footer>
+
+  <script src="../SCRIPT/order.js"></script>
+</body>
+</html>

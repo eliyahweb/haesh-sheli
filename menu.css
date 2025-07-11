@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../RES/flames-bg.png') bottom center / cover no-repeat fixed, black;
+  color: white;
+  margin: 0;
+  direction: rtl;
+  padding: 0 15px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.back {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.menu-section {
+  max-width: 800px;
+  margin: auto;
+}
+
+.menu-section h2 {
+  margin-top: 40px;
+  color: white;
+  background-color: crimson;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.4em;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  background-color: rgba(0,0,0,0.7);
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.button {
+  background-color: crimson;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
