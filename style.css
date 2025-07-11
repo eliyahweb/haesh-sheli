@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url('../RES/flames-bg.png') bottom center / cover no-repeat fixed, #000;
+  background: url('flames-bg.png') bottom center / cover no-repeat fixed, #000;
   color: white;
   direction: rtl;
   display: flex;
