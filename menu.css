@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url('../RES/flames-bg.png') bottom center / cover no-repeat fixed, black;
+  background: url('flames-bg.png') bottom center / cover no-repeat fixed, black;
   color: white;
   margin: 0;
   direction: rtl;
